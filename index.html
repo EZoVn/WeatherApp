@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <main
+      class="m-auto max-w-96 rounded-2xl bg-cyan-700 px-10 py-9 text-center"
+    >
+      <h1 class="text-4xl font-bold text-red-800">Weather app</h1>
+
+      <!-- choix de la Ville -->
+
+      <div class="p-4">
+        <div class="flex items-center justify-between p-2">
+          <input
+            id="inputSearch"
+            class="w-full flex-1 rounded-l-xl border-0 bg-slate-600 py-2 pl-6 text-sm outline-0"
+            type="text"
+            placeholder="Entrez une ville"
+          />
+          <button
+            type="submit"
+            class="w-9 rounded-r-xl border-0 bg-slate-600 p-1 outline-0"
+            id="searchBtn"
+          >
+            <img src="./images/chercher.png" alt="search icon" />
+          </button>
+        </div>
+
+        <!-- photo temps  -->
+        <!-- temperature C -->
+        <!-- Nom de la ville -->
+        <div id="weather" class="hidden">
+          <div class="flex flex-col items-center gap-8 p-12">
+            <img
+              id="imgWeather"
+              class="w-40"
+              src="./images/nuageuxPluie.png"
+              alt=""
+            />
+            <h2 class="text-5xl font-bold" id="temperature">12 °C</h2>
+            <h3 class="text-3xl font-semibold" id="city">Nom de la ville</h3>
+          </div>
+
+          <!-- vent + humidité -->
+          <div class="flex justify-between p-5">
+            <div>
+              <img
+                class="h-16 w-16"
+                id="imgHumidity"
+                src="./images/humidite.png"
+                alt="humidity"
+              />
+              <div>
+                <p>humidité</p>
+                <p id="humidity">50%</p>
+              </div>
+            </div>
+            <div>
+              <img
+                class="h-16 w-16"
+                id="imgWind"
+                src="./images/vent.png"
+                alt="wind"
+              />
+              <div>
+                <p>vent</p>
+                <p id="wind">12 km/h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Bonus autre jours -->
+    </main>
+  </body>
+</html>
