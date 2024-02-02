@@ -1,3 +1,15 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+.day {
+  /* @apply bg-sky-500; */
+  background-image: url("./images/jour.png");
+  background-size: cover;
+}
+
+.night {
+  /* @apply bg-indigo-950; */
+  background-image: url("./images/nuit.png");
+  background-size: cover;
+  background-position: center;
+}

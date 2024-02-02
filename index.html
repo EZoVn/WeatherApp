@@ -9,14 +9,15 @@
   </head>
   <body>
     <main
-      class="m-auto max-w-96 rounded-2xl bg-cyan-700 px-10 py-9 text-center"
+      id="main"
+      class="xs:rounded-2xl day xs:px-10 m-auto max-w-96 py-9 text-center"
     >
-      <h1 class="text-4xl font-bold text-red-800">Weather app</h1>
+      <h1 class="text-4xl font-bold text-red-900">Weather app</h1>
 
       <!-- choix de la Ville -->
 
       <div class="p-4">
-        <div class="flex items-center justify-between p-2">
+        <form id="searchForm" class="flex items-center justify-between p-2">
           <input
             id="inputSearch"
             class="w-full flex-1 rounded-l-xl border-0 bg-slate-600 py-2 pl-6 text-sm outline-0"
@@ -30,7 +31,7 @@
           >
             <img src="./images/chercher.png" alt="search icon" />
           </button>
-        </div>
+        </form>
 
         <!-- photo temps  -->
         <!-- temperature C -->

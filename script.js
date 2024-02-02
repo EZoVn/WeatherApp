@@ -7,6 +7,7 @@ const humidity = document.getElementById('humidity');
 const wind = document.getElementById('wind');
 const imgWeather = document.getElementById('imgWeather');
 const keyAPI = '';
+const keyAPITimeZone = ''
 
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -49,7 +50,6 @@ function changeBackground(hours) {
 }
 
 
-const keyAPITimeZone = ''
 
 async function getTimeZone(lat, lon) {
   const response = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=${keyAPITimeZone}&format=json&by=position&lat=${lat}&lng=${lon}`)
