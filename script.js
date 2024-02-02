@@ -6,8 +6,8 @@ const cityElement = document.getElementById('city');
 const humidity = document.getElementById('humidity');
 const wind = document.getElementById('wind');
 const imgWeather = document.getElementById('imgWeather');
-const keyAPI = '';
-const keyAPITimeZone = ''
+const keyAPI = process.env.API_KEY;
+const keyAPITimeZone = process.env.API_KEY_TIMEZONE;
 
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
