@@ -15,5 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/api/weather', weatherRouter);
+app.use('/', (req, res) => {
+  res.send('Welcome to the weather app');
+});
 
 module.exports = app;

@@ -57,7 +57,7 @@ function changeBackground(hours) {
 }
 
 async function fetchGetTimeZone(lat, lon) {
-  const response = await fetch(`http://localhost:3000/api/weather/timezone`, {
+  const response = await fetch(`https://weather-app-ezo-api.vercel.app/api/weather/timezone`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
