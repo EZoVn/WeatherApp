@@ -1,12 +1,8 @@
 {
-  "functions": {
-    "server.js": {
-      "maxDuration": 30
-    }
-  },
+  "version": 2,
   "builds": [
     {
-      "src": "*.js",
+      "src": "./index.js",
       "use": "@vercel/node"
     }
   ],
