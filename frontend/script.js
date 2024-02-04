@@ -34,7 +34,6 @@ async function fetchWeather(city) {
       body: JSON.stringify({ city: input })
     });
     const weatherData = await response.json();
-    console.log(weatherData);
     temperature.innerHTML = Math.round(weatherData.main.temp) + '°C';
     cityElement.innerHTML = weatherData.name;
     humidity.innerHTML = `${weatherData.main.humidity}%`;
@@ -66,7 +65,6 @@ async function fetchGetTimeZone(lat, lon) {
   });
 
   const data = await response.json();
-  console.log(data);
   const hours = data.formatted.slice(11, 13);
   changeBackground(hours);
 }
