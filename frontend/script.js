@@ -26,7 +26,7 @@ const weatherImages = {
 async function fetchWeather(city) {
   const input = inputSearch.value;
   try {
-    const response = await fetch('http://localhost:3000/api/weather/recherche', {
+    const response = await fetch('https://weather-app-ezo-api.vercel.app/api/weather/recherche', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
